@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    position: relative;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+ul li{
+    padding: 20px;
+    list-style: none;
+    position: relative;
+}
+ul li:hover{
+   color: white;
+   background-color: green;
+}
+ul li ul.services{
+    position: relative;
+    display: none;
+    color: white;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+}
+ul li:hover ul.services{
+    display: block;
+}
+#main{
+    min-height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main::before{
+    content: "";
+    min-height: 90vh;
+    background-image: url("\\images\\_AKL0696.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: .5;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#time{
+    font-size: 20px;
+    position: relative;
+}

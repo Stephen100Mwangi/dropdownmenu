@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#nav{
+    display: flex;
+    justify-content: flex-end;
+}
+ul{
+    list-style: none;
+    background-color:#526D82 ;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    color: white;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+ul li ul.abt li ,ul li ul.ser li{
+    display: block;
+}
+ul li ul.abt,ul li ul.ser{
+    position: absolute;
+    display: block;
+    width: fit-content;
+    display: none;
+}
+ul li a:hover{
+    background-color: #99A98F;
+    color: black;
+}
+ul li:hover ul.ser,ul li:hover ul.abt{
+    color: black;
+    display: block;
+}
+ul li ul.abt ul.mission,ul li ul.abt ul.values,ul li ul.abt ul.vision{
+    display: none;
+}
+ul li ul.abt li:hover ul.mission,ul li ul.abt li:hover ul.vision,ul li ul.abt li:hover ul.values{
+    color: black;
+    transform: translateX(100px);
+    display: block;
+    width: 100%;
+}
